@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Akhil Mathamsetti, portfolio Akhil Mathamsetti,Web Developer, Web Development, UI Designer, UX Designer, Web Designer."
+    />
+    <meta
+      name="description"
+      content="Welcome to Akhil's Portfolio. Passionate Web Developer , Creative UI/UX Designer."
+    />
+    <title>Portfolio | Akhil Mathamsetti</title>
+    <!-- Favicon -->
+    <link id="favicon" rel="shortcut icon" href="" type="image/x-png" />
+
+    <!-- Linking Custom style Sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Linking Bootstrap CSS CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- AOS CSS Link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Loader Section Starts -->
+    <div class="loader-container">
+      <img draggable="false" src="/assets//images/loader.gif" alt="" />
+    </div>
+    <!-- Loader Section Ends -->
+    <!-- Navbar Section Starts -->
+    <nav class="appNavbar" id="Navbar">
+        <div class="brand-logo">
+          <a href="/index.html"">
+            <i class="fab fa-react"></i>
+            Akhil</a>
+        </div>
+        <ul class="navigation">
+          <li class="nav-item active"><a href="#Home" class="nav-link" onclick="addActive()">Home</a></li>
+          <li class="nav-item"><a href="#About" class="nav-link" onclick="addActive()">About</a></li>
+          <li class="nav-item"><a href="#Skills" class="nav-link" onclick="addActive()">Skills</a></li>
+          <li class="nav-item"><a href="#Services" class="nav-link" onclick="addActive()">Services</a></li>
+          <li class="nav-item"><a href="#Portfolio" class="nav-link" onclick="addActive()">Portfolio</a></li>
+          <li class="nav-item"><a href="#Contact" class="nav-link" onclick="addActive()">Contact</a></li>
+        </ul>
+        <div class="menuToggle">
+            <i class="fas fa-bars toggleIcon"></i>
+            <i class="fas fa-times toggleIcon"></i>
+        </div>
+      </nav>
+    <!-- Navbar Section Ends -->
+    <!-- Intro Section Starts -->
+    <section
+      class="
+        intro
+        d-flex
+        flex-column flex-sm-row
+        align-items-center
+        justify-content-between
+      "
+      id="Home"
+    >
+      <div
+        class="backgroundImage"
+        data-aos="zoom-in-down"
+        data-aos-duration="300"
+      ></div>
+      <!-- Intro Square -->
+      <div class="intro-square one"></div>
+      <div class="intro-square two"></div>
+      <div class="intro-square three"></div>
+      <!-- Intro Text Container -->
+      <div
+        class="intro-textBx col-md-7 col-12"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <p class="intro-interest" data-aos="fade-up">
+          WEB DESIGN & WEB DEVELOPMENT -
+        </p>
+        <p class="intro-greet" data-aos="fade-down">HELLO I'M</p>
+        <h2 class="intro-name" data-aos="fade-up">
+          Akhil&nbsp;<span class="intro-nameSpan"> - </span>
+        </h2>
+        <div class="intro-buttons">
+          <button><a href="#Contact">Contact Me</a></button>
+          <button><a href="/assets/resume.pdf">Download CV</a></button>
+        </div>
+        <ul class="intro-sci" data-aos="zoom-in-down">
+          <li>
+            <a href="https://www.linkedin.com/in/sai-akhil-3159081a4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/Sai-Akhil138"><i class="fab fa-github-square" target="_blank"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/s_a_i_____a_k_h_i_l/"><i class="fab fa-instagram" target="_blank"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/akhil.sai.98434/"><i class="fab fa-facebook-square" target="_blank"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="intro-imgBx col-md-5 col-12 text-center"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <img src="/assets/images/intro.png" alt="Intro Akhil Portfolio" />
+      </div>
+    </section>
+    <!-- Intro Section Endss -->
+
+    <!-- About Me Section Starts -->
+    <section
+      class="about"
+      id="About"
+      data-aos="fade-up"
+      data-aos-duration="800"
+    >
+      <div class="about-imgBx col-md-5 col-12">
+        <img src="./assets/images/about.jpg" alt="Akhil About Me SlefIntro" />
+      </div>
+      <div class="about-textBx col-md-7 col-12">
+        <h2 class="title"><i class="fas fa-user"></i> About <span>Me</span></h2>
+        <p class="about-desc mb-3 italic">
+          Hello, I’m Akhil, <br />
+          <b> A Creative UI/UX Designer and Enthusiast at Web Development.</b>
+          I’m Commited to Web Development and Education.My job is to develop
+          your website so that it is functional and user-friendly but at the
+          same time attractive
+        </p>
+        <p class="about-desc italic">
+          The mission - “To design solutions that improve the quality of life of
+          millions of people.”
+        </p>
+        <div
+          class="
+            aboutBox-container
+            mt-1
+            d-flex
+            justify-content-between
+            flex-column flex-md-row
+          "
+        >
+          <div class="aboutBox">
+            <p><span> age: </span> 21</p>
+            <p><span> college : </span> RGUKT Srikakulam</p>
+          </div>
+          <div class="aboutBox">
+            <p><span> email : </span> akhilmsa007@gmail.com</p>
+            <p><span> place : </span> Andhra Pradesh, India-533235</p>
+          </div>
+        </div>
+
+        <div class="resumebtn">
+          <a href="#" class="resume-btn"
+            ><span>Resume</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section Ends -->
+    <!-- Skills Section Starts -->
+    <section class="skills" id="Skills">
+      <h2 class="title text-center">
+        <i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span>
+      </h2>
+      <div class="skills-container">
+        <div class="skill-row">
+          <div class="skill-col" data-aos="fade-right" data-aos-duration="25">
+            <div class="skill-box" data-aos="fade-down" data-aos-duration="50">
+              <div class="skill-info">
+                <i class="fab fa-html5"> <span>HTML</span></i>
+                <span>90%</span>
+              </div>
+              <div class="skill-line html"></div>
+            </div>
+            <div class="skill-box" data-aos="fade-down" data-aos-duration="100">
+              <div class="skill-info">
+                <i class="fab fa-css3-alt"> <span>CSS</span></i>
+                <span>80%</span>
+              </div>
+              <div class="skill-line css"></div>
+            </div>
+            <div class="skill-box" data-aos="fade-down" data-aos-duration="150">
+              <div class="skill-info">
+                <i class="fab fa-js"> <span>Javascript</span></i>
+                <span>70%</span>
+              </div>
+              <div class="skill-line js"></div>
+            </div>
+            <div class="skill-box" data-aos="fade-down" data-aos-duration="200">
+              <div class="skill-info">
+                <i class="fab fa-bootstrap"> <span>Bootstrap</span></i>
+                <span>70%</span>
+              </div>
+              <div class="skill-line bs"></div>
+            </div>
+          </div>
+          <div class="skill-col" data-aos="fade-left" data-aos-duration="25">
+            <div class="skill-box" data-aos="fade-down" data-aos-duration="50">
+              <div class="skill-info">
+                <i class="fab fa-sass"> <span>Sass</span></i>
+                <span>70%</span>
+              </div>
+              <div class="skill-line sass"></div>
+            </div>
+            <div class="skill-box" data-aos="fade-down" data-aos-duration="100">
+              <div class="skill-info">
+                <i class="fab fa-react"> <span>React Js</span></i>
+                <span>60%</span>
+              </div>
+              <div class="skill-line react"></div>
+            </div>
+            <div class="skill-box" data-aos="fade-down" data-aos-duration="150">
+              <div class="skill-info">
+                <i class="fas fa-code"> <span>Jquery</span></i>
+                <span>65%</span>
+              </div>
+              <div class="skill-line jquery"></div>
+            </div>
+            <div class="skill-box" data-aos="fade-down" data-aos-duration="200">
+              <div class="skill-info">
+                <i class="fab fa-python"> <span>Python</span></i>
+                <span>60%</span>
+              </div>
+              <div class="skill-line python"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section Ends -->
+    <!-- Education Section Starts -->
+    <section class="education" id="Education">
+      <div class="education-container" data-aos="fade-up">
+        <h2 class="title text-center">
+          <i class="fas fa-graduation-cap"></i> My <span>Education</span>
+        </h2>
+        <p class="section-desc text-center mb-5">
+          Education Is Not The Learning Of Facts, But The Training Of The Mind
+          To Think.
+        </p>
+        <div class="edu-cards" data-aos="zoom-in" data-aos-duration="500">
+          <div class="edu-card">
+            <div class="eduCard-img">
+              <img src="./assets/images/rguktcollege.jpeg" alt="RGUKT Srikakulam IIIT" width="100%" height="100%" />
+            </div>
+            <div class="eduCard-text">
+              <h2 class="eduCard-title">
+                Bachelor of Engineering in Computer Science
+              </h2>
+              <p class="eduCard-clz">RGUKT ( IIIT ) Srikakulam</p>
+              <p class="eduCard-year">2018 - 2022 | Pursuing</p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="eduCard-img">
+              <img src="./assets/images/rguktcollege.jpeg" alt="RGUKT Srikakulam IIIT" width="100%" height="100%" />
+            </div>
+            <div class="eduCard-text">
+              <h2 class="eduCard-title">Pre University Course</h2>
+              <p class="eduCard-clz">RGUKT ( IIIT ) Srikakulam</p>
+              <p class="eduCard-year">2016 - 2018 | Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section Ends -->
+    <!-- Services Section Starts -->
+    <section class="services" id="Services">
+      <h2 class="title text-center" data-aos="fade-in">
+        <i class="fas fa-cogs"></i> My <span>Services</span>
+      </h2>
+      <div class="services-container container" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="serviceBox">
+              <div class="serviceIcon">
+                <img src="./assets/images/Code.png" alt="Web Development">
+              </div>
+              <div class="serviceText">
+                <h2 class="serviceTitle">Web Development</h2>
+                <p class="serviceDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eligendi dicta officiis vero ipsa fugiat quam tempora fuga
+                  blanditiis consectetur quaerat? Eos pariatur sequi deserunt
+                  magni?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="serviceBox">
+              <div class="serviceIcon">
+                <img src="./assets/images/iOS Development.png" alt="Responsive Design Development">
+              </div>
+              <div class="serviceText">
+                <h2 class="serviceTitle">Responsive Design</h2>
+                <p class="serviceDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eligendi dicta officiis vero ipsa fugiat quam tempora fuga
+                  blanditiis consectetur quaerat? Eos pariatur sequi deserunt
+                  magni?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="serviceBox">
+              <div class="serviceIcon">
+                <img src="./assets/images/Web Design.png" alt="Web Design">
+              </div>
+              <div class="serviceText">
+                <h2 class="serviceTitle">Web Design</h2>
+                <p class="serviceDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eligendi dicta officiis vero ipsa fugiat quam tempora fuga
+                  blanditiis consectetur quaerat? Eos pariatur sequi deserunt
+                  magni?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="serviceBox">
+              <div class="serviceIcon">
+                <img src="./assets/images/Design.png" alt="Creative Design Web">
+              </div>
+              <div class="serviceText">
+                <h2 class="serviceTitle">Creative Design</h2>
+                <p class="serviceDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eligendi dicta officiis vero ipsa fugiat quam tempora fuga
+                  blanditiis consectetur quaerat? Eos pariatur sequi deserunt
+                  magni?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="serviceBox">
+              <div class="serviceIcon">
+                <img src="./assets/images/Computer Support.png" alt="Web Development Quick Support">
+              </div>
+              <div class="serviceText">
+                <h2 class="serviceTitle">Quick Support</h2>
+                <p class="serviceDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eligendi dicta officiis vero ipsa fugiat quam tempora fuga
+                  blanditiis consectetur quaerat? Eos pariatur sequi deserunt
+                  magni?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="serviceBox">
+              <div class="serviceIcon">
+                <img src="./assets/images/Paid Search.png" alt="SEO Friendly SeoOptimization">
+              </div>
+              <div class="serviceText">
+                <h2 class="serviceTitle">SEO Friendly</h2>
+                <p class="serviceDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eligendi dicta officiis vero ipsa fugiat quam tempora fuga
+                  blanditiis consectetur quaerat? Eos pariatur sequi deserunt
+                  magni?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section Ends -->
+    <!-- Portfolio Section Starts -->
+    <section class="portfolio" id="Portfolio">
+      <h2 class="title text-center">Latest <span>Work</span></h2>
+      <p class="section-desc text-center mb-3">Explore my latest work on Web Development</p>
+      <ul class="workList">
+        <li class="listBtn active" data-filter="all">All</li>
+        <li class="listBtn" data-filter="design">Design</li>
+        <li class="listBtn" data-filter="web">Web Development</li>
+        <li class="listBtn" data-filter="projects">Projects</li>
+      </ul>
+      <div class="workImages">
+        <!-- Design -->
+        <div class="ItemBox">
+          <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="filter-image design"/>
+        </div>
+        <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="filter-image design"/>
+        <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="filter-image design"/>
+      
+
+        <!-- Web -->
+        <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="filter-image web"/>
+        <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="filter-image web"/>
+        
+
+        <!-- Projects -->
+        <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="filter-image projects"/>
+        
+      </div>
+    </section>
+    <!-- Portfolio Section Ends -->
+    <!-- Contact Section Starts -->
+    <section class="contact" id="Contact">
+      <h2 class="title text-center"><i class="fas fa-headset"></i> Get In <span> Touch </span></h2>
+      <div class="contact-container">
+        <div class="contactBox d-flex flex-column flex-md-row" data-aos="fade-left">
+          <div class="contactImg col-12 col-md-6">
+            <img src="./assets/images/contact.png" draggable="false" alt="" class="img-fluid" />
+          </div>
+            <form action="" class="contactForm col-12 col-md-6" data-aos="fade-right">
+              <div class="form-group">
+                <div class="field">
+                  <input type="text" name="name" placeholder="Name" required>
+                  <i class='fas fa-user'></i>
+                </div>
+                <div class="field">
+                  <input type="text" name="email" placeholder="Email" required>
+                  <i class='fas fa-envelope'></i>
+                </div>
+                <div class="field">
+                  <input type="text" name="phone" placeholder="Phone">
+                  <i class='fas fa-phone-alt'></i>
+                </div>
+                <div class="message">
+                <textarea placeholder="Message" name="message" required></textarea>
+                <i class="fas fa-comment-dots"></i>
+                </div>
+                </div>
+              <div class="button-area">
+                <button type="submit">
+                  Submit <i class="fa fa-paper-plane"></i></button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section Ends -->
+    <section class="footer">
+      <div class="footerContainer d-flex flex-column flex-md-row mb-3">
+          <div class="footerBox col-12 col-md-8 col-lg-5 mr-lg-3">
+              <h3>Akhil's Portfolio</h3>
+              <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Please wait for a while all major projects will be listed soon. Till then keep visiting. Connect with me over live chat!</p>
+          </div>
+          <div class="footerBox col-12 col-md-4 col-lg-3">
+              <h3>quick links</h3>
+              <a href="#Home"><i class="fas fa-chevron-circle-right"></i> home</a>
+              <a href="#About"><i class="fas fa-chevron-circle-right"></i> about</a>
+              <a href="#Skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+              <a href="#Services"><i class="fas fa-chevron-circle-right"></i> services</a>
+              <a href="#Portfolio"><i class="fas fa-chevron-circle-right"></i> portfolio</a>
+              <a href="#Contact"><i class="fas fa-chevron-circle-right"></i> contact</a>
+          </div>
+          <div class="footerBox col-12 col-md-5 col-lg-3">
+              <h3>contact info</h3>
+              <p> <i class="fas fa-envelope"></i> akhilmsa007@gmail.com</p>
+              <p> <i class="fas fa-map-marked-alt"></i> Andhra Pradesh, India-533235</p>
+              <div class="share">
+                  <a href="https://www.linkedin.com/in/sai-akhil-3159081a4/" class="fab fa-linkedin" target="_blank"></a>
+                  <a href="https://github.com/Sai-Akhil138" class="fab fa-github" target="_blank"></a>
+                  <a href="https://www.instagram.com/s_a_i_____a_k_h_i_l/" class="fab fa-instagram" target="_blank"></a>
+                  <a href="https://www.facebook.com/akhil.sai.98434/" class="fab fa-facebook" target="_blank"></a>
+              </div>
+          </div>
+      </div>
+      <div class="creditBox d-flex flex-column flex-md-row justify-content-between">
+        <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href=""> Akhil Mathamsetti </a></h1>
+        <h1 class="credit">&copy; 2021, Akhil. All Rights Reserved.</h1>
+      </div>
+    </section>
+    <!-- footer section ends -->
+    <!-- Scroll to Top Btn -->
+    <a href="#Home" class="fas fa-angle-up" id="scroll-top"></a>
+    <!--  Scroll to Top Btn -->
+    <!-- Jquery CDN File -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Typing Js Effect CDN File -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Font Awesome CDN File -->
+    <script
+      src="https://kit.fontawesome.com/07a386e886.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Adding Bootstrap JS CDN Files -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Adding AOS Js File -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Adding Custom Js File -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
