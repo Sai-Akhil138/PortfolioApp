@@ -14,7 +14,7 @@
     />
     <title>Portfolio | Akhil Mathamsetti</title>
     <!-- Favicon -->
-    <link id="favicon" rel="shortcut icon" href="" type="image/x-png" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
 
     <!-- Linking Custom style Sheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -123,7 +123,7 @@
       class="about"
       id="About"
       data-aos="fade-up"
-      data-aos-duration="800"
+      data-aos-duration="500"
     >
       <div class="about-imgBx col-md-5 col-12">
         <img src="./assets/images/about.jpg" alt="Akhil About Me SlefIntro" />
@@ -161,7 +161,7 @@
         </div>
 
         <div class="resumebtn">
-          <a href="#" class="resume-btn"
+          <a href="./assets/resume.pdf" target="_blank" class="resume-btn"
             ><span>Resume</span>
             <i class="fas fa-chevron-right"></i>
           </a>
@@ -386,7 +386,7 @@
     <!-- Services Section Ends -->
     <!-- Portfolio Section Starts -->
     <section class="portfolio" id="Portfolio">
-      <h2 class="title text-center">Latest <span>Work</span></h2>
+      <h2 class="title text-center"><i class="fas fa-laptop-code"></i> Latest <span>Work</span></h2>
       <p class="section-desc text-center mb-3">Explore my latest work on Web Development</p>
       <ul class="workList">
         <li class="listBtn active" data-filter="all">All</li>
@@ -394,15 +394,9 @@
         <li class="listBtn" data-filter="web">Web Development</li>
         <li class="listBtn" data-filter="projects">Projects</li>
       </ul>
-      <div class="workImages">
+      <div class="workImages" data-aos="zoom-in" data-aos-duration="500">
         <!-- Design -->
-        <div class="ItemBox">
           <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="filter-image design"/>
-          <div class="itemContent">
-            <h3 class="itemTitle">Portolio App</h3><br>
-            <p>It is a Simple portfolio website to showcase our work and experience. <b>Technolgies: </b> HTML,CSS,Vanilla Js,Jquery.</p>
-          </div>
-        </div>
         <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="filter-image design"/>
         <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="filter-image design"/>
       
@@ -421,7 +415,7 @@
     <!-- Contact Section Starts -->
     <section class="contact" id="Contact">
       <h2 class="title text-center"><i class="fas fa-headset"></i> Get In <span> Touch </span></h2>
-      <div class="contact-container">
+      <div class="contact-container d-flex flex-column flex-md-row">
         <div class="contactBox d-flex flex-column flex-md-row" data-aos="fade-left">
           <div class="contactImg col-12 col-md-6">
             <img src="./assets/images/contact.png" draggable="false" alt="" class="img-fluid" />
