@@ -216,8 +216,8 @@ ul.navigation
 {
     position: relative;   
     width: 100%;
-    min-height: 70vh;
-    padding: 5rem 100px 0;
+    min-height: 80vh;
+    padding: 6rem 100px 0;
 }
 
 .backgroundImage
@@ -441,6 +441,16 @@ ul.navigation
     {
         transform: translateY(-5px);
     }
+}
+
+#scroll-mouse
+{
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    animation: moving .5s forwards infinite;
 }
 
 /* About Section CSS Starts */
@@ -1419,6 +1429,10 @@ form .button-area
     {
         min-height: 60px;
         max-height: 80px;
+    }
+    .footer
+    {
+        padding: 1rem 25px;
     }
 }
 

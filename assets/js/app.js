@@ -24,9 +24,11 @@ window.onscroll = () => {
   if (window.scrollY > 60) {
     Navbar.classList.add("active");
     document.querySelector("#scroll-top").classList.add("active");
+    document.getElementById("scroll-mouse").style.display = "none";
   } else {
     Navbar.classList.remove("active");
     document.querySelector("#scroll-top").classList.remove("active");
+    document.getElementById("scroll-mouse").style.display = "block";
   }
 };
 
@@ -52,7 +54,7 @@ $(document).ready(function () {
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "visible") {
     document.title = "Portfolio | Akhil Portfolio";
-    $("#favicon").attr("href", "assests/images/favicon.png");
+    $("#favicon").attr("href", "./assests/images/favicon.png");
   } else {
     document.title = "Come Back To Portfolio";
   }
