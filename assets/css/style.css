@@ -553,133 +553,87 @@ ul.navigation
 
 .skills > .skills-container
 {
-    background: rgba( 0, 0, 22, 0.4);
-    border-radius: 1rem;
     padding: 2rem;
 }
 
-.skills > .skills-container > .skill-row
-{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    flex-wrap: wrap;
-}
-
-.skills >  .skills-container > .skill-row > .skill-col
-{
-    display: grid;
-}
-
-.skills .skills-container .skill-col
-{
-    position: relative;
-    width: 90%;
-    color: #fff;
-    margin-top: .5rem;
-}
-
-.skills .skills-container .skill-col .skill-box
-{
-    margin-bottom: 1rem;
-    padding: 10px;
-    border-radius: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,.2);
-    background: rgba( 0, 0, 15, 0.5);
-    transition: all 0.3s linear;
-}
-
-.skills .skills-container .skill-col .skill-box:hover
-{
-    transform: translateX(12px);
-    box-shadow: 0 5px 8px rgba(0, 2, 68, 0.4);
-}
-
-.skills .skills-container .skill-col .skill-box .skill-info
+.skill-row
 {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
+}
+
+.skill-box
+{
+    margin: 1.5rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 0, 0, 22, 0.4);
+}
+
+.skill-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-info > i
+{
+    font-size: 6rem;
     margin-bottom: 1rem;
 }
 
-.skills .skills-container .skill-col .skill-box .skill-info i
-{
-    font-size: 2.5rem;
-}
-
-.skills .skills-container .skill-col .skill-box .skill-info span
+.skill-info > span
 {
     font-size: 1.5rem;
-    font-weight: 500;
-    margin-left: .5rem;
+    color: var(--teal-light);
 }
 
-.skills .skills-container .skill-col .skill-box .skill-line
+.skill-info > i.html
 {
-    position: relative;
-    width: 100%;
-    height: 10px;
-    background: rgb(212, 211, 211);
-    border-radius: 6px;
+    color: #df3704;
 }
 
-.skills .skills-container .skill-col .skill-box .skill-line:before
+.skill-info > i.css
 {
-    content: '';
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
+    color: #1045d6;
 }
 
-.skills .skills-container .skill-col .skill-box .skill-line.html::before
+.skill-info > i.js
 {
-    width: 90%;
-    background: #e24b1d;
+    color: #ffd900;
 }
 
-.skills .skills-container .skill-col .skill-box .skill-line.css::before
+.skill-info > i.bs
 {
-    width: 80%;
-    background: #2962ff;
+    color: #5429f0;
 }
 
-.skills .skills-container .skill-col .skill-box .skill-line.js::before
+.skill-info > i.sass
 {
-    width: 70%;
-    background: #ffd900;
+    color: #8054c7;
 }
 
-.skills .skills-container .skill-col .skill-box .skill-line.bs::before
+.skill-info > i.react
 {
-    width: 70%;
-    background: #3d10dd;
+    color: #2962FF;
 }
 
-.skills .skills-container .skill-col .skill-box .skill-line.sass::before
+.skill-info > i.jquery
 {
-    width: 70%;
-    background: #8054c7;
+    color: #d31f1f;
 }
 
-.skills .skills-container .skill-col .skill-box .skill-line.react::before
+.skill-info > i.python
 {
-    width: 60%;
-    background: #2962FF;
-}
-
-.skills .skills-container .skill-col .skill-box .skill-line.jquery::before
-{
-    width: 65%;
-    background: #CE0505;
-}
-
-.skills .skills-container .skill-col .skill-box .skill-line.python::before
-{
-    width: 60%;
-    background: #2fdf7e;
+    color: #10ce65;
 }
 
 /* Education Section CSS Starts */
@@ -1296,6 +1250,17 @@ form .button-area
         width: 100%;
     }
 
+    .skill-row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skill-col
+    {
+        display: flex;
+    }
+
     .contact-container
     {
         padding: 2rem 3rem;
@@ -1391,14 +1356,27 @@ form .button-area
        padding: 5rem 25px;
    }
 
-   .skills > .skills-container > .skill-row
+   .skill-row
     {
-        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
     }
 
-    .skills .skills-container .skill-col 
+    .skill-col
     {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill-box
+    {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .skill-info > i
+    {
+        font-size: 4rem;
     }
 
     .edu-cards
@@ -1418,6 +1396,16 @@ form .button-area
     .eduCard-text
     {
         width: 100%;
+    }
+
+    .services-container
+    {
+        padding: 0 !important;
+    }
+
+    .filter-image
+    {
+        width: calc(100vw - 5rem);
     }
 
     .contact-container
