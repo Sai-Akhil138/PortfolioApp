@@ -11,7 +11,7 @@
     --teal-dark: #027e7e;
     --teal-extradark: #004C4C;
     --bg-white: #fcfcfc;
-    --red-color: #e03636;
+    --red-color: #ee2e2e;
     --shadow : 2px 5px 16px -2px rgba(0,0,0,0.25);
     --light-blue: #80f0ec;
     --pure-black: #000;
@@ -227,7 +227,7 @@ ul.navigation
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #7ce7e7, #006161);
+    background-image: linear-gradient(to bottom, #7ce7e7, #32b6b6);
     z-index: -1;
     border-radius: 0 5rem 0 250rem;
     box-shadow: 0 4px 8px -1px rgba(0,0,0,0.5);
@@ -547,7 +547,7 @@ ul.navigation
 .skills
 {
     width: 100%;
-    background: linear-gradient(to bottom, #008080,#007070);
+    background: linear-gradient(to bottom, #228989,#187272);
     padding: 2rem inherit;
 }
 
@@ -573,7 +573,7 @@ ul.navigation
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba( 0, 0, 22, 0.4);
+    background: rgba( 0, 0, 25, 0.5);
 }
 
 .skill-info
@@ -603,7 +603,7 @@ ul.navigation
 
 .skill-info > i.css
 {
-    color: #1045d6;
+    color: #00195c;
 }
 
 .skill-info > i.js
@@ -613,7 +613,7 @@ ul.navigation
 
 .skill-info > i.bs
 {
-    color: #5429f0;
+    color: #370ecc;
 }
 
 .skill-info > i.sass
@@ -623,7 +623,7 @@ ul.navigation
 
 .skill-info > i.react
 {
-    color: #2962FF;
+    color: #2456e0;
 }
 
 .skill-info > i.jquery
