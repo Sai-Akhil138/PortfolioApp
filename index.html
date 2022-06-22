@@ -403,27 +403,31 @@
         <div class="contactImg col-12 col-md-6">
           <img src="./assets/images/contact.png" draggable="false" alt="" class="img-fluid" />
         </div>
-        <form action="" class="contactForm col-12 col-md-6" data-aos="fade-right">
+        <form id="contactForm" class="contactForm col-12 col-md-6" data-aos="fade-right">
           <div class="form-group">
             <div class="field">
-              <input type="text" name="name" placeholder="Name" required>
+              <input type="text" name="name" id="contactName" placeholder="Name">
               <i class='fas fa-user'></i>
             </div>
+            <p id="nameErrMsg" class="mb-0"></p>
             <div class="field">
-              <input type="text" name="email" placeholder="Email" required>
+              <input type="text" name="email" id="contactEmail" placeholder="Email">
               <i class='fas fa-envelope'></i>
             </div>
+            <p id="emailErrMsg" class="mb-0"></p>
             <div class="field">
-              <input type="text" name="phone" placeholder="Phone">
+              <input type="text" name="phone" id="contactNumber" placeholder="Phone">
               <i class='fas fa-phone-alt'></i>
             </div>
+            <p id="numberErrMsg" class="mb-0"></p>
             <div class="message">
-              <textarea placeholder="Message" name="message" required></textarea>
+              <textarea placeholder="Message" id="contactMessage" name="message"></textarea>
               <i class="fas fa-comment-dots"></i>
             </div>
+            <p id="messageErrMsg" class="mb-0"></p>
           </div>
           <div class="button-area">
-            <button type="submit">
+            <button type="submit" id="submitBtn">
               Submit <i class="fa fa-paper-plane"></i></button>
           </div>
         </form>
