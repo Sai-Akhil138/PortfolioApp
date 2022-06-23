@@ -110,57 +110,62 @@ document.addEventListener(
   false
 );
 
-
 // Contact Form Code
 let contactFormEl = document.getElementById("contactForm");
 let contactNameEl = document.getElementById("contactName");
-let contactEmailEl = document.getElementById('contactEmail');
-let contactNumberEl = document.getElementById('contactNumber');
-let contactMessageEl = document.getElementById('contactMessage');
+let contactEmailEl = document.getElementById("contactEmail");
+let contactNumberEl = document.getElementById("contactNumber");
+let contactMessageEl = document.getElementById("contactMessage");
 
-let nameErrMsgEl = document.getElementById('nameErrMsg');
-let emailErrMsgEl = document.getElementById('emailErrMsg');
-let numberErrMsgEl = document.getElementById('numberErrMsg');
-let messageErrMsgEl = document.getElementById('messageErrMsg');
+let nameErrMsgEl = document.getElementById("nameErrMsg");
+let emailErrMsgEl = document.getElementById("emailErrMsg");
+let numberErrMsgEl = document.getElementById("numberErrMsg");
+let messageErrMsgEl = document.getElementById("messageErrMsg");
 
 // var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-contactNameEl.addEventListener('blur', function() {
-  if(contactNameEl.value === ""){
-    nameErrMsgEl.textContent = 'Please enter valid name';
-    nameErrMsgEl.classList.add('errorMsg');
-  }else{
-    nameErrMsgEl.textContent = '';
+contactNameEl.addEventListener("blur", function () {
+  if (contactNameEl.value === "") {
+    nameErrMsgEl.textContent = "Please enter valid name";
+    nameErrMsgEl.classList.add("errorMsg");
+  } else {
+    nameErrMsgEl.textContent = "";
   }
 });
 
-contactEmailEl.addEventListener('blur', function() {
-  if(contactEmailEl.value === ""){
-    emailErrMsgEl.textContent = 'Please enter valid email';
-    emailErrMsgEl.classList.add('errorMsg');
-  }else{
-    emailErrMsgEl.textContent = '';
+contactEmailEl.addEventListener("blur", function () {
+  if (contactEmailEl.value === "") {
+    emailErrMsgEl.textContent = "Please enter valid email";
+    emailErrMsgEl.classList.add("errorMsg");
+  } else {
+    emailErrMsgEl.textContent = "";
   }
 });
 
-contactNumberEl.addEventListener('blur', function() {
-  if(contactNumberEl.value === ""){
-    numberErrMsgEl.textContent = 'Please enter valid number';
-    numberErrMsgEl.classList.add('errorMsg');
-  }else{
-    numberErrMsgEl.textContent = '';
+contactNumberEl.addEventListener("blur", function () {
+  if (contactNumberEl.value === "") {
+    numberErrMsgEl.textContent = "Please enter valid number";
+    numberErrMsgEl.classList.add("errorMsg");
+  } else {
+    numberErrMsgEl.textContent = "";
   }
 });
 
-contactMessageEl.addEventListener('blur', function() {
-  if(contactMessageEl.value === ""){
-    messageErrMsgEl.textContent = 'Please enter valid message';
-    messageErrMsgEl.classList.add('errorMsg');
-  }else{
-    messageErrMsgEl.textContent = '';
+contactMessageEl.addEventListener("blur", function () {
+  if (contactMessageEl.value === "") {
+    messageErrMsgEl.textContent = "Please enter valid message";
+    messageErrMsgEl.classList.add("errorMsg");
+  } else {
+    messageErrMsgEl.textContent = "";
   }
 });
 
-contactFormEl.addEventListener('submit', function(event){
+contactFormEl.addEventListener("submit", function (event) {
   event.preventDefault();
+
+  // Clearing the values after the submit event is fired
+  contactNameEl.value = "";
+  contactEmailEl.value = "";
+  contactNumberEl.value = "";
+  contactMessageEl.value = "";
 });
